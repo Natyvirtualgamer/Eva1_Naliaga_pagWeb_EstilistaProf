@@ -49,6 +49,11 @@ body {
     position: relative;
     z-index: 2;
 }
+.imagen-zoom {
+    transition: transform 0.3s;
+    height: 250px;
+    object-fit: cover;
+}
 
 /* Cards de servicios */
 .card {
