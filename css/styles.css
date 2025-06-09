@@ -36,24 +36,24 @@ body {
 }
 
 /* Hero Section */
+/* Centrado y ajuste responsive */
+.imagen-salon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Efecto zoom al pasar el mouse */
 .imagen-zoom {
     transition: transform 0.3s ease;
 }
 
 .imagen-zoom:hover {
-    transform: scale(1.10); /* Aumenta levemente la imagen */
+    transform: scale(1.05);
 }
 
-
-.hero-header .container {
-    position: relative;
-    z-index: 2;
-}
-.imagen-zoom {
-    transition: transform 0.3s;
-    height: 250px;
-    object-fit: cover;
-}
 
 /* Cards de servicios */
 .card {
