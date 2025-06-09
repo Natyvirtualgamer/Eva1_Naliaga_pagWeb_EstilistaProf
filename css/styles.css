@@ -1,0 +1,141 @@
+
+/* Fuente general */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f5f6;
+    color: #940775;
+}
+
+#titulo {
+    color: #f7f5f6;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#titulo:hover {
+    background-color: #fc60c8;   /* Fondo rosado intenso al pasar el mouse */
+    color: white;                /* Texto blanco */
+}
+
+
+/* Navbar -barra de navegación */
+.navbar {
+    background-color: #fb90cb;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    font-weight:10px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffe6e9 !important;
+}
+
+/* Hero Section */
+.imagen-zoom {
+    transition: transform 0.3s ease;
+}
+
+.imagen-zoom:hover {
+    transform: scale(1.10); /* Aumenta levemente la imagen */
+}
+
+
+.hero-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Cards de servicios */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 130px; /* o el alto que prefieras */
+    object-fit: cover; /* recorta la imagen sin deformarla */
+    object-position: center; /* centra el recorte */
+}
+
+
+/* Galería */
+#galeria img {
+    transition: transform 0.3s;
+}
+
+#galeria img:hover {
+    transform: scale(1.09);
+}
+
+/* Formulario */
+form .form-control:focus {
+    border-color: #ff6b81;
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 129, 0.25);
+}
+.btn-custom {
+    background-color: #fc60c8;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #fc60c9;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 0;
+}
+
+footer a img {
+    margin: 0 10px;
+    transition: transform 0.2s;
+}    
+/* acá se llama a la clase icono para invertir colores y se haga mas visible TIKTOK*/
+    .invertir-icono{       
+        filter: brightness(0) invert(5);
+    }
+
+footer a img:hover {
+    transform: scale(1.1);
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    transform: scale(2.2);
+}
+
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
+}

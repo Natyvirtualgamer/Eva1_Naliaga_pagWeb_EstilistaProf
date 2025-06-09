@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Estilista Profesional - Servicios de Belleza</title>
+
+    <!-- Enlace a Bootstrap (framework o conjunto de librerias para ocipar estilos predefinidos,botones,formularios, permite que se adapte a distintos dispositivos-->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Enlace a tu CSS personalizado (conecta la pag con la configuración de estilo) -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+        <!-- Navbar(barra de navegación)-->
+    <nav class="navbar navbar-expand">
+        <div class="container">
+            <a id="titulo"class="navbar-brand" href="#">Estilista Profesional</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de bienvenida con imagen de fondo -->
+    <header class="hero-header text-center py-5" style="background-image: url('/js/img/peinados-tendencia1.png'); 
+                background-size: cover; 
+                background-position: center;
+                background-repeat: no-repeat;">
+        <div class="container">
+            <h1 class="display-4">¡Realza tu Belleza con un Toque Profesional!</h1>
+            <p class="lead">Descubre nuestros servicios exclusivos de peluquería, maquillaje y más.</p>
+            <a href="#contacto" class="btn btn-custom">Reserva tu Cita</a>
+        </div>
+    </header>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="js/img/salon.png" class="img-fluid rounded imagen-zoom" alt="Estilista Profesional">
+            </div>
+            <div class="col-md-6">
+                <h2 style="text-align: center;">Sobre Mí</h2>
+                <p style="text-align: center;">Soy Natalie Aliaga, una profesional con más de 10 años de experiencia en el mundo de la belleza. Me especializo en cortes, tintes, maquillaje y asesoramiento de imagen.</p>
+                <p style="text-align: center;">Mi misión es realzar tu belleza con técnicas innovadoras y productos de alta calidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="container mt-5">
+        <h2 class="text-center">Nuestros Servicios</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="js/img/corte_niño.png" class="card-img-top" alt="Corte de pelo niños">
+                    <div class="card-body">
+                        <h5 style="text-align: center;color: #fc60c8" class="card-title">Corte de Pelo niños y niñas. </h5>
+                        <p style="text-align: center;" class="card-text">Diseños modernos y cómodos para los más pequeños.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="js/img/tipos-de-mechas-en-tendecia.png" class="card-img-top" alt="Coloración y Mechas">
+                    <div class="card-body">
+                        <h5 style="text-align: center;color: #fc60c8"  class="card-title">Coloración y Mechas</h5>
+                        <p style="text-align: center;" class="card-text">Tintes de alta calidad para un look espectacular.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="js/img/maquillaje.png" class="card-img-top" alt="Maquillaje Profesional">
+                    <div class="card-body">
+                        <h5 style="text-align: center;color: #fc60c8" card-title">Maquillaje Profesional</h5>
+                        <p style="text-align: center;" class="card-text">Ideal para bodas, eventos y ocasiones especiales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="container mt-5" >
+        <h2 class="text-center">Galería de Trabajos</h2>
+        <div class="row mt-5 justify-content-center">
+            <div  class="col-md-3"><img style="width: 240px;height: 240px;"src="js/img/corte-masculino-con-degradado.png" class="img-fluid rounded" alt="Trabajo 1" ></div>
+            <div  class="col-md-3"><img style="width: 240px;height: 240px;" src="js/img/peinado niñas.png" class="img-fluid rounded" alt="Trabajo 2"></div>
+            <div  class="col-md-3"><img style="width: 240px;height: 240px;"src="js/img/peinado_trenzas_urabno.png" class="img-fluid rounded" alt="Trabajo 3"></div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container mt-5 mb-5">
+        <h2 class="text-center">Contáctame</h2>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom w-100">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #fc60c8"; class=" text-white text-center py-3 ">
+        <p>&copy; 2025 Estilista Profesional | Todos los derechos reservados</p>
+        <p>Sígueme en redes sociales:</p>
+        <div>
+            <a href="https://facebook.com/TU_USUARIO" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" width="40">
+            </a>
+            <a href="https://instagram.com/TU_USUARIO" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40">
+            </a>
+            <a href="https://tiktok.com/@TU_USUARIO" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" clASS= "invertir-icono" alt="TikTok" width="40">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Botón de WhatsApp Flotante -->
+    <a href="https://wa.me/56987778172?text=Hola%2C%20quiero%20agendar%20una%20cita%20contigo." target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <!-- Estilos internos para el botón flotante y el header -->
+    <style>
+        .hero-header {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(242, 238, 238);
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+            padding: 100px 20px;
+        }
+
+        .hero-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(255, 255, 255, 0.2); /* Filtro blanco semitransparente */
+            z-index: 1;
+        }
+
+        .hero-header .container {
+            position: relative;
+            z-index: 5;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+
+</body>
+</html>
